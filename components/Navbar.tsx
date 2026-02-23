@@ -14,7 +14,6 @@ const Navbar = () => {
     const toggleMenu = () => setIsMobileMenuOpen(!isMobileMenuOpen);
     const closeMenu = () => setIsMobileMenuOpen(false);
 
-    // Common Navigation Links
     const navLinks = ["About Us", "Services", "Collection", "Articles", "Previous Clients"];
 
     if (isHomePage) {
@@ -24,7 +23,7 @@ const Navbar = () => {
                     {/* Logo */}
                     <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
                         <Image
-                            src="/assets/Logo.svg"
+                            src="/assets/Logo AT-2 1.svg"
                             alt="Anggara Treasures Logo"
                             width={180}
                             height={60}
@@ -48,7 +47,7 @@ const Navbar = () => {
                     {/* Right Side Actions (Desktop) */}
                     <div className="hidden md:flex items-center gap-4">
                         {/* Search Bar */}
-                        <div className="flex items-center border border-[#6F4E37] rounded-full px-4 py-2 w-64 bg-black/20 backdrop-blur-sm">
+                        <div className="flex items-center bg-[#4A3728] rounded-full px-4 py-2 w-64 border border-[#6F4E37]/50">
                             <Search className="w-5 h-5 mr-2 text-[#D4AF37]" />
                             <input
                                 type="text"
@@ -112,7 +111,7 @@ const Navbar = () => {
                 {/* Logo */}
                 <Link href="/" className="flex items-center gap-2" onClick={closeMenu}>
                     <Image
-                        src="/assets/Logo.svg"
+                        src="/assets/Logo AT-2 1.svg"
                         alt="Anggara Treasures Logo"
                         width={180}
                         height={60}

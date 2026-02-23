@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram } from "lucide-react";
+import { Instagram, Youtube } from "lucide-react";
 
 const Footer = () => {
     return (
@@ -30,14 +30,15 @@ const Footer = () => {
                         height={500}
                         className="w-full h-auto object-cover"
                         priority
-                        quality={100}
+                        quality={75}
                     />
 
                     <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 text-white">
-                        <div className="flex items-center gap-2 mb-4">
+                        <div className="flex items-center gap-2 mb-4 text-[#AE1919]">
                             <Instagram className="w-6 h-6" />
                             <span className="font-medium">Follow Anggara Treasures</span>
                         </div>
+
                         <p className="text-center text-sm opacity-80 px-4">
                             © Copyright Professional Imperial Feng Shui and Imperial Bazi Reading Expert. All Rights Reserved.
                         </p>

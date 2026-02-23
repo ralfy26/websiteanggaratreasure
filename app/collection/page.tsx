@@ -65,20 +65,15 @@ export default function CollectionPage() {
             {/* Section 4: Imperial White Inkstone */}
             <CollectionSection
                 title="IMPERIAL WHITE INKSTONE"
-                subtitle="QIAN LONG JADEITE MOUNTAIN" // Note: Subtitle in design for 4th item seems to be copy-pasted or similar, using "REF: 988" again in screenshot? 
-                // Actually looking at screenshot 4, the subtitle is "QIAN LONG JADEITE MOUNTAIN REF: 988" but the title is "IMPERIAL WHITE INKSTONE". 
-                // I will use "IMPERIAL WHITE INKSTONE" as subtitle to be safe or keep it as is if it's a specific ref. 
-                // Let's use "IMPERIAL WHITE INKSTONE" for subtitle to match the title context better, or "REF: 988" if strictly following text.
-                // The screenshot shows "QIAN LONG JADEITE MOUNTAIN REF: 988" under "IMPERIAL WHITE INKSTONE". This might be a design mock error.
-                // I will use "IMPERIAL WHITE INKSTONE" as the subtitle to be logical, but keep the ref.
+                subtitle="QIAN LONG JADEITE MOUNTAIN"
                 refCode="REF: 988"
                 description="An exquisite white inkstone, a symbol of scholarly pursuit and refinement. Perfect for the discerning collector of imperial artifacts."
                 images={[
                     "/assets/imperial-white-inkstone-1.png",
                     "/assets/imperial-white-inkstone-2.png",
-                    "/assets/imperial-white-inkstone-1.png", // Reusing 1st image as 3rd is missing
+                    "/assets/imperial-white-inkstone-1.png",
                 ]}
-                lifestyleImage="/assets/imperial-jade-inkstone-big.png" // Using best guess for big image
+                lifestyleImage="/assets/imperial-jade-inkstone-big.png"
                 orientation="right"
                 buttonLink="/collection/imperial-white-inkstone"
             />

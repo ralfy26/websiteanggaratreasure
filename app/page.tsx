@@ -8,12 +8,14 @@ import ArticlesSection from "@/components/ArticlesSection";
 import TrustedBySection from "@/components/TrustedBySection";
 import TestimonialSection from "@/components/TestimonialSection";
 import ContactSection from "@/components/ContactSection";
+import VideoInsightsSection from "@/components/VideoInsightsSection";
 
 export default function Home() {
   return (
     <div className="flex min-h-screen flex-col bg-white">
       <main className="grow">
         <Hero />
+        <VideoInsightsSection />
         <AboutSection />
         <ProsperitySection />
         <MitosFaktaSection />

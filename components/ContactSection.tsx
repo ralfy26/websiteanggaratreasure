@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { Instagram, MapPin } from "lucide-react";
+import { Instagram, MapPin, Youtube } from "lucide-react";
 
 const ContactSection = () => {
     return (
@@ -8,7 +8,7 @@ const ContactSection = () => {
             {/* Map Section */}
             <div className="w-[80%] h-64 bg-gray-200 rounded-xl overflow-hidden mb-12 relative mx-auto">
                 <iframe
-                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.337909471038!2d106.81464367499032!3d-6.219094193768893!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f15508fc71f1%3A0x508c6ff6b817c346!2sMRCCC%20Siloam%20Hospitals%20Semanggi!5e0!3m2!1sid!2sid!4v1768138173999!5m2!1sid!2sid"
+                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.3229879730793!2d106.81929629999999!3d-6.2210719!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2e69f32a7605d4b7%3A0x604518fcb1bcdca!2sAnggara%20Treasures!5e0!3m2!1sid!2sid!4v1770968641610!5m2!1sid!2sid"
                     width="100%"
                     height="100%"
                     style={{ border: 0 }}
@@ -31,7 +31,7 @@ const ContactSection = () => {
                         {/* Logo */}
                         <div className="mt-8">
                             <Image
-                                src="/assets/Logo.svg"
+                                src="/assets/Logo AT-2 1.svg"
                                 alt="Anggara Treasures Logo"
                                 width={200}
                                 height={80}
@@ -56,9 +56,13 @@ const ContactSection = () => {
                                 <p className="text-gray-600">anggaratreasures@gmail.com</p>
                             </div>
 
-                            <div className="pt-4 flex md:justify-end items-center gap-2 text-[#D4AF37]">
+                            <div className="pt-4 flex md:justify-end items-center gap-2 text-[#AE1919]">
                                 <Instagram className="w-6 h-6" />
                                 <Link href="#" className="underline text-lg">Follow Anggara Treasures</Link>
+                            </div>
+                            <div className="pt-4 flex md:justify-end items-center gap-2 text-[#AE1919]">
+                                <Youtube className="w-6 h-6" />
+                                <Link href="#" className="underline text-lg">Watch Anggara Treasures</Link>
                             </div>
                         </div>
                     </div>

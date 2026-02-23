@@ -1,61 +1,9 @@
 "use client";
 
 import Image from "next/image";
-import { Clock, Video, MapPin, Mail, Phone } from "lucide-react";
-import { useState } from "react";
 import ContactSection from "@/components/ContactSection";
 
-const CARDS_DATA = [
-    {
-        id: 1,
-        title: "BAZI BLUEPRINT (LIVE ON ZOOM)",
-        subtitle: "Jadwal sesi konsultasi yang fleksibel, bisa online/offline saat ini tersedia",
-        description: "Memahami Profil Diri & Anda secara menyeluruh, mulai dari karir, keuangan, hubungan, kesehatan, bisnis, baik nasib serta strategi arah kesuksesan dan Jack Area, agar anda juga bisa bertanya apapun langsung dengan Saya",
-        price: "1.000.000",
-        duration: "1 Hour",
-        buttonText: "Book consultation"
-    },
-    {
-        id: 2,
-        title: "FENGSHUI AUDIT (LIVE ON ZOOM)",
-        subtitle: "Waktu audit memang detail, posisi titik, opsi renovasi rumah",
-        description: "Mengetahui apa sisi positif dan negatif dari properti Anda. Mengetahui bagian mana di properti Anda yang membawa hal negatif dan positif. Dan Anda bisa bertanya apapun langsung dengan Saya.",
-        price: "2.000.000",
-        duration: "1 Hour",
-        buttonText: "Book consultation"
-    },
-    {
-        id: 3,
-        title: "BUSINESS & CAREER (Video)",
-        subtitle: "Video recording will be sent via email",
-        description: "Pencarian akan melihat bisnis apa yang paling cocok untuk Anda, mana yang paling mudah dan paling cepat untuk menghasilkan uang",
-        price: "500.000",
-        duration: "1 Hour",
-        buttonText: "Order Video"
-    }
-];
-
 export default function ServicesPage() {
-    const [cards, setCards] = useState(CARDS_DATA);
-
-    const handlePrev = () => {
-        setCards((prev) => {
-            const newCards = [...prev];
-            const last = newCards.pop();
-            if (last) newCards.unshift(last);
-            return newCards;
-        });
-    };
-
-    const handleNext = () => {
-        setCards((prev) => {
-            const newCards = [...prev];
-            const first = newCards.shift();
-            if (first) newCards.push(first);
-            return newCards;
-        });
-    };
-
     return (
         <main className="bg-white text-black">
             {/* Hero Section */}
@@ -77,13 +25,12 @@ export default function ServicesPage() {
             {/* Personal Feng Shui & Bazi Reading Section */}
             <section className="container mx-auto px-4 py-16">
                 <div className="flex flex-col lg:flex-row gap-12 items-center">
-                    {/* Text Content */}
                     <div className="w-full lg:w-1/2">
                         <div className="flex items-center gap-4 mb-4">
                             <span className="text-[#A52A2A] font-bold">Personal</span>
                             <span className="text-gray-400">Home</span>
                             <span className="text-gray-400">Office & Business</span>
-                            <div className="h-px bg-gray-300 flex-grow ml-4"></div>
+                            <div className="h-px bg-gray-300 grow ml-4"></div>
                         </div>
 
                         <h2 className="text-3xl font-bold mb-6">Personal Feng Shui & Bazi Reading</h2>
@@ -95,19 +42,19 @@ export default function ServicesPage() {
 
                         <ul className="space-y-2 text-[#A52A2A] mb-8">
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full flex-shrink-0"></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full shrink-0"></span>
                                 <span>Analisis keberuntungan pribadi dan siklus kehidupan</span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full flex-shrink-0"></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full shrink-0"></span>
                                 <span>Insight arah karier, keuangan, dan pengembangan diri</span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full flex-shrink-0"></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full shrink-0"></span>
                                 <span>Identifikasi potensi, kekuatan, dan tantangan pribadi</span>
                             </li>
                             <li className="flex items-start gap-2">
-                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full flex-shrink-0"></span>
+                                <span className="mt-1.5 w-1.5 h-1.5 bg-[#A52A2A] rounded-full shrink-0"></span>
                                 <span>Rekomendasi praktis yang disesuaikan dengan kondisi individu</span>
                             </li>
                         </ul>
@@ -120,7 +67,6 @@ export default function ServicesPage() {
                     {/* Images Collage */}
                     <div className="w-full lg:w-1/2 relative">
                         <div className="grid grid-cols-2 gap-4">
-                            {/* Top Left Image - Terracotta Warrior */}
                             <div className="relative h-64 w-full rounded-tr-[3rem] rounded-bl-[3rem] overflow-hidden shadow-lg transform translate-y-8">
                                 <Image
                                     src="/assets/service-1.png"
@@ -130,7 +76,6 @@ export default function ServicesPage() {
                                 />
                             </div>
 
-                            {/* Top Right Image - Business Handshake */}
                             <div className="relative h-64 w-full rounded-tl-[3rem] rounded-br-[3rem] overflow-hidden shadow-lg">
                                 <Image
                                     src="/assets/service-2.png"
@@ -140,7 +85,6 @@ export default function ServicesPage() {
                                 />
                             </div>
 
-                            {/* Bottom Left Image - Interior */}
                             <div className="relative h-64 w-full rounded-tl-[3rem] rounded-br-[3rem] overflow-hidden shadow-lg transform translate-y-8">
                                 <Image
                                     src="/assets/service-3.png"
@@ -150,7 +94,6 @@ export default function ServicesPage() {
                                 />
                             </div>
 
-                            {/* Bottom Right - Castle Sketch Background */}
                             <div className="relative h-64 w-full flex items-center justify-center">
                                 <Image
                                     src="/assets/castle.svg"
@@ -164,84 +107,40 @@ export default function ServicesPage() {
                 </div>
             </section>
 
-            {/* Online Session Offering Section */}
+            {/* Session Offering - Waiting List Section */}
             <section className="py-20 bg-white">
                 <div className="container mx-auto px-4">
-                    <h2 className="text-3xl font-bold text-center mb-4">Online session offering</h2>
-                    <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12">
+                    <h2 className="text-3xl font-bold text-center mb-4">session offering</h2>
+                    <p className="text-center text-gray-600 max-w-3xl mx-auto mb-12 italic">
                         Berbasis garis keturunan asli Imperial Feng Shui, Pendekatan personal, bukan solusi massal,
                         Rekomendasi yang praktis dan aplikatif, Fokus pada keseimbangan, kejelasan, dan keberlanjutan
                     </p>
 
-                    <div className="relative bg-[#3D0C0C] rounded-[3rem] p-12 overflow-hidden min-h-[600px] flex items-center">
-                        {/* Background Image */}
+                    <div className="relative bg-[#3D0C0C] rounded-2xl overflow-hidden min-h-[450px] flex flex-col items-center justify-center">
                         <div className="absolute inset-0 z-0 flex items-center justify-center pointer-events-none">
                             <div className="relative w-full h-full opacity-40">
                                 <Image
                                     src="/assets/red-castle.png"
                                     alt="Background Pattern"
                                     fill
-                                    className="object-contain"
+                                    className="object-cover"
                                 />
                             </div>
                         </div>
 
-                        {/* Navigation Arrows */}
-                        <button
-                            onClick={handlePrev}
-                            className="absolute left-4 top-1/2 -translate-y-1/2 z-20 hover:scale-110 transition-transform"
-                        >
-                            <Image
-                                src="/assets/Polygon.svg"
-                                alt="Previous"
-                                width={40}
-                                height={40}
-                                className="w-4 h-4 md:w-6 md:h-6"
-                            />
-                        </button>
-                        <button
-                            onClick={handleNext}
-                            className="absolute right-4 top-1/2 -translate-y-1/2 z-20 hover:scale-110 transition-transform"
-                        >
-                            <Image
-                                src="/assets/Polygon.svg"
-                                alt="Next"
-                                width={40}
-                                height={40}
-                                className="w-4 h-4 md:w-6 md:h-6 rotate-180"
-                            />
-                        </button>
+                        <div className="relative z-10 flex flex-col items-center justify-center text-center px-6 py-16">
+                            <h3 className="text-white text-2xl md:text-3xl font-medium mb-12 tracking-wide">
+                                Soon to Be Revealed
+                            </h3>
 
-                        <div className="grid md:grid-cols-3 gap-6 relative z-10 w-full">
-                            {cards.map((card, index) => (
-                                <div
-                                    key={card.id}
-                                    className={`backdrop-blur-sm rounded-2xl p-5 border border-white/20 text-white transition-all duration-500 ease-in-out
-                                        ${index === 1 ? 'scale-105 shadow-2xl bg-white/10 z-10' : 'scale-95 opacity-80 bg-transparent'}
-                                    `}
-                                >
-                                    <h3 className="text-lg font-bold mb-1 uppercase tracking-wider">{card.title}</h3>
-                                    <p className="text-[10px] text-gray-300 mb-3">{card.subtitle}</p>
-                                    <p className="text-xs text-gray-200 mb-4 leading-relaxed line-clamp-4">
-                                        {card.description}
-                                    </p>
-
-                                    <div className="flex items-center gap-4 text-xs mb-4">
-                                        <div className="flex items-center gap-1.5">
-                                            <span className="text-white/60">Rp INVEST</span>
-                                            <span className="font-semibold">{card.price}</span>
-                                        </div>
-                                        <div className="flex items-center gap-1.5">
-                                            <Clock className="w-3 h-3 text-white/60" />
-                                            <span>{card.duration}</span>
-                                        </div>
-                                    </div>
-
-                                    <button className="text-[#D4AF37] text-xs font-medium hover:underline uppercase tracking-wide">
-                                        {card.buttonText}
-                                    </button>
-                                </div>
-                            ))}
+                            <div className="flex flex-col items-center gap-3">
+                                <p className="text-white text-lg md:text-xl font-medium tracking-wide">
+                                    Waiting List : <span className="font-bold">23</span>
+                                </p>
+                                <button className="text-[#D4AF37] text-sm md:text-base font-semibold underline underline-offset-4 decoration-[#D4AF37] hover:text-[#E5C048] transition-colors">
+                                    Join Waiting List ?
+                                </button>
+                            </div>
                         </div>
                     </div>
                 </div>
