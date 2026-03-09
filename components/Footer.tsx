@@ -34,9 +34,9 @@ const Footer = () => {
                     />
 
                     <div className="absolute inset-0 flex flex-col items-center justify-end pb-8 text-white">
-                        <div className="flex items-center gap-2 mb-4 text-[#AE1919]">
+                        <div className="flex items-center gap-2 mb-4 text-[#FFFFFF]">
                             <Instagram className="w-6 h-6" />
-                            <span className="font-medium">Follow Anggara Treasures</span>
+                            <Link href="https://www.instagram.com/anggaratreasures" className="font-medium" target="_blank">Follow Anggara Treasures</Link>
                         </div>
 
                         <p className="text-center text-sm opacity-80 px-4">

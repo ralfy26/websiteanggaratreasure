@@ -5,7 +5,6 @@ import CloudOrnament from "./CloudOrnament";
 const AboutSection = () => {
     return (
         <section className="relative bg-white py-20 overflow-hidden">
-            {/* Cloud Ornaments */}
             <CloudOrnament
                 width={200}
                 height={200}
@@ -31,10 +30,7 @@ const AboutSection = () => {
                     </div>
                 </div>
 
-                {/* Content Box with Corners */}
                 <div className="relative max-w-4xl mx-auto p-12 md:p-16 text-center">
-                    {/* Corner Decorations */}
-                    {/* Top Left */}
                     <div className="absolute top-0 left-0 w-16 h-16 md:w-24 md:h-24">
                         <Image src="/assets/corner.svg" alt="Corner Decoration" fill className="object-contain" />
                     </div>
@@ -48,21 +44,13 @@ const AboutSection = () => {
                         <Image src="/assets/corner.svg" alt="Corner Decoration" fill className="object-contain" />
                     </div>
 
-                    {/* Text Content */}
                     <div className="space-y-6 text-gray-800 leading-relaxed font-medium">
                         <p>
-                            Tahun Ular Kayu 2025 membawa energi pertumbuhan, transformasi, dan peluang besar.
-                            Anggara Treasures membantu Anda meningkatkan keberuntungan dalam karier, bisnis, investasi, dan
-                            kehidupan melalui Imperial Feng Shui dan Imperial Bazi Reading.
-                        </p>
-                        <p>
-                            Dipimpin oleh Master Rezza—ahli yang mewarisi langsung ilmu Imperial Feng Shui Kaisar Qian Long—
-                            kami menghadirkan metode feng shui aktif yang mampu membentuk dan mengarahkan nasib,
-                            melalui harmoni Yin-Yang, Lima Elemen, serta pemanfaatan giok, gaharu, dan cendana.
+                            Tahun Kuda Api 2026 membawa energi pergerakan, keberanian, dan akselerasi menuju pencapaian yang lebih tinggi. Anggara Treasures membantu Anda menyelaraskan peluang dalam karier, bisnis, investasi, dan kehidupan melalui pendekatan Imperial Feng Shui dan Imperial Bazi Reading.
+                            Dipimpin oleh Master Rezza—ahli yang mewarisi langsung ilmu Imperial Feng Shui Kaisar Qian Long—kami menghadirkan metode feng shui aktif yang dirancang untuk membentuk dan mengarahkan nasib secara sadar. Melalui harmoni Yin–Yang, keseimbangan Lima Elemen, serta pemanfaatan giok, gaharu, dan cendana, Anggara Treasures membantu mengoptimalkan energi kehidupan agar selaras, kuat, dan berkelanjutan.
                         </p>
                     </div>
 
-                    {/* Action Buttons */}
                     <div className="flex justify-center gap-6 mt-10">
                         <Link href="/services" className="bg-[#800000] text-white px-8 py-3 rounded-md hover:bg-[#600000] transition-colors shadow-md">
                             Our Services

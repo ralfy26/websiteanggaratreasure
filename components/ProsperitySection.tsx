@@ -26,7 +26,7 @@ const ProsperitySection = () => {
 
                         <div className="absolute bottom-0 right-10 w-[60%] h-[45%] z-30 rounded-2xl overflow-hidden">
                             <Image
-                                src="/assets/home-3.png"
+                                src="/assets/home-3 new.png"
                                 alt="Prosperity Image 3"
                                 fill
                                 className="object-cover rounded-2xl"

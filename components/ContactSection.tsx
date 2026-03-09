@@ -58,11 +58,11 @@ const ContactSection = () => {
 
                             <div className="pt-4 flex md:justify-end items-center gap-2 text-[#AE1919]">
                                 <Instagram className="w-6 h-6" />
-                                <Link href="#" className="underline text-lg">Follow Anggara Treasures</Link>
+                                <Link href="https://www.instagram.com/anggaratreasures" className="underline text-lg" target="_blank">Follow Anggara Treasures</Link>
                             </div>
                             <div className="pt-4 flex md:justify-end items-center gap-2 text-[#AE1919]">
                                 <Youtube className="w-6 h-6" />
-                                <Link href="#" className="underline text-lg">Watch Anggara Treasures</Link>
+                                <Link href="https://www.youtube.com/@AnggaraTreasures" className="underline text-lg" target="_blank">Watch Anggara Treasures</Link>
                             </div>
                         </div>
                     </div>
