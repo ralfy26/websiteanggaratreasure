@@ -63,28 +63,20 @@ body {
   animation: marquee-left 15s linear infinite;
 }
 
-.articles-perspective {
-  perspective: 900px;
-}
-
-.article-card {
-  transform-style: preserve-3d;
-}
-
 .article-card-0 {
-  transform: rotateX(8deg) rotateZ(-5deg) scale(0.95);
+  transform: rotateZ(4deg) scale(0.9);
 }
 
 .article-card-1 {
-  transform: rotateX(5deg) scale(1);
+  transform: scale(1);
   z-index: 10;
 }
 
 .article-card-2 {
-  transform: rotateX(8deg) rotateZ(5deg) scale(0.95);
+  transform: rotateZ(-4deg) scale(0.9);
 }
 
 .article-card:hover {
-  transform: rotateX(0deg) rotateZ(0deg) scale(1.05) !important;
+  transform: rotateZ(0deg) scale(1) !important;
   z-index: 20 !important;
 }

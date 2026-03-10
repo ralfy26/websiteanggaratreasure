@@ -67,7 +67,7 @@ export default function ServicesPage() {
                     {/* Images Collage */}
                     <div className="w-full lg:w-1/2 relative">
                         <div className="grid grid-cols-2 gap-4">
-                            <div className="relative h-64 w-full rounded-tr-[3rem] rounded-bl-[3rem] overflow-hidden shadow-lg transform translate-y-8">
+                            <div className="relative h-64 w-full rounded-tr-[3rem] rounded-bl-[3rem] overflow-hidden transform translate-y-8">
                                 <Image
                                     src="/assets/service-1.png"
                                     alt="Terracotta Warrior"
@@ -76,30 +76,30 @@ export default function ServicesPage() {
                                 />
                             </div>
 
-                            <div className="relative h-64 w-full rounded-tl-[3rem] rounded-br-[3rem] overflow-hidden shadow-lg">
+                            <div className="relative h-64 w-full rounded-tl-3xl rounded-br-3xl [clip-path:polygon(0%_0%,75%_0%,100%_25%,100%_100%,25%_100%,0%_75%)] overflow-hidden shadow-lg  transform translate-y-8">
                                 <Image
-                                    src="/assets/service-2.png"
+                                    src="/assets/service-2.jpeg"
                                     alt="Business Consultation"
                                     fill
-                                    className="object-cover"
+                                    className="object-fill"
                                 />
                             </div>
 
-                            <div className="relative h-64 w-full rounded-tl-[3rem] rounded-br-[3rem] overflow-hidden shadow-lg transform translate-y-8">
+                            <div className="relative h-64 w-full rounded-tl-3xl rounded-br-3xl [clip-path:polygon(0%_0%,75%_0%,100%_25%,100%_100%,25%_100%,0%_75%)] overflow-hidden shadow-lg transform translate-y-8">
                                 <Image
-                                    src="/assets/service-3.png"
+                                    src="/assets/service-3.jpeg"
                                     alt="Interior Design"
                                     fill
                                     className="object-cover"
                                 />
                             </div>
 
-                            <div className="relative h-64 w-full flex items-center justify-center">
+                            <div className="relative h-64 w-full rounded-tr-3xl rounded-bl-3xl [clip-path:polygon(25%_0%,100%_0%,100%_75%,75%_100%,0%_100%,0%_25%)] overflow-hidden shadow-lg  transform translate-y-8">
                                 <Image
-                                    src="/assets/castle.svg"
+                                    src="/assets/service-4.jpeg"
                                     alt="Castle Sketch"
                                     fill
-                                    className="object-contain opacity-50"
+                                    className="object-fill"
                                 />
                             </div>
                         </div>
